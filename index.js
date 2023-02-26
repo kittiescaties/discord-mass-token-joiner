@@ -1,7 +1,8 @@
 const https = require('https');
 const fs = require('fs');
+const config = require('./config.json');
 
-const invites = ['darkfollows']; // Add more invites here if needed
+const invites = config.server_invite // Add more invites here if needed
 
 fs.readFile('tokens.txt', 'utf8', (err, data) => {
   if (err) throw err;
