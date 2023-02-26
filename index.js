@@ -58,7 +58,7 @@ fs.readFile('tokens.txt', 'utf8', (err, data) => {
       });
 
       req.on('error', (error) => {
-        console.error(error);
+        console.error("Captcha Detected");
       });
 
       req.write(postData);
