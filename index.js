@@ -21,6 +21,7 @@ fs.readFile('tokens.txt', 'utf8', (err, data) => {
 
       });
       const options = {
+        host: config.rotating_proxy,
         hostname: 'discord.com',
         path: '/api/v10/invites/' + invite,
         method: 'POST',
